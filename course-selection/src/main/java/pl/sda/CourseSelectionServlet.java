@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-@WebServlet(name = "CourseSelectionServle", value = "/courseSelection")
+@WebServlet(name = "CourseSelectionServlet", value = "/courseSelection")
 public class CourseSelectionServlet extends HttpServlet {
 
     Map<String, Collection<String>> courses = new HashMap<>();
