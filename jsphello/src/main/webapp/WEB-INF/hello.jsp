@@ -12,7 +12,6 @@
     <title>Hello World</title>
 </head>
 <body>
-    <p>Dzisiaj jest <%= LocalDateTime.now().toString()%></p>
     <p><% out.print("Licznik odwiedzin: " + Counter.INSTANCE.getCount()); %></p>
 </body>
 </html>
