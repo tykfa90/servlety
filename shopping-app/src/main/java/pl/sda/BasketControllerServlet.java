@@ -21,6 +21,8 @@ public class BasketControllerServlet extends HttpServlet {
             basket = new HashMap<>();
         }
 
+        // Monika - ten kod poniżej działa, ale wyświetla koszyk brzydko, w postaci "["id artykułu"="ilość w koszyku"]
+        // Możesz sobie to przerobić, ale generalnie to działa tak jak powinno, przynajmniej według Adama.
         PrintWriter writer = resp.getWriter();
         writer.println("<html>" +
                 "<body>" +
