@@ -69,6 +69,8 @@ public class FileDownload extends HttpServlet {
         while ((bytesRead = inputStream.read(buffer)) != -1) {
             respOutputStream.write(buffer, 0, bytesRead);
         }
+        respOutputStream.flush();
+        respOutputStream.close();
 
     }
 }
