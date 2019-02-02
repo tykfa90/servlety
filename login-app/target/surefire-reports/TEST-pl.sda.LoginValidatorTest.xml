@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="pl.sda.LoginValidatorTest" time="0.051" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="pl.sda.LoginValidatorTest" time="0.05" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="PL"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Dell\AppData\Local\Temp\surefire7293201636282971163\surefirebooter8610783335279548083.jar C:\Users\Dell\AppData\Local\Temp\surefire7293201636282971163 2019-01-27T13-37-20_222-jvmRun1 surefire4044381648095301895tmp surefire_03309523210645554705tmp"/>
+    <property name="sun.java.command" value="C:\Users\Dell\AppData\Local\Temp\surefire5279441006965650700\surefirebooter5742807227828663060.jar C:\Users\Dell\AppData\Local\Temp\surefire5279441006965650700 2019-02-02T12-53-08_535-jvmRun1 surefire1687338725204620768tmp surefire_051280043288553819tmp"/>
     <property name="surefire.test.class.path" value="E:\servlety\login-app\target\test-classes;E:\servlety\login-app\target\classes;C:\Users\Dell\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Dell\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Dell\.m2\repository\javax\javaee-api\8.0\javaee-api-8.0.jar;C:\Users\Dell\.m2\repository\com\sun\mail\javax.mail\1.6.0\javax.mail-1.6.0.jar;C:\Users\Dell\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\Dell\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Dell"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Dell\AppData\Local\Temp\surefire7293201636282971163\surefirebooter8610783335279548083.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Dell\AppData\Local\Temp\surefire5279441006965650700\surefirebooter5742807227828663060.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -46,7 +46,7 @@
     <property name="localRepository" value="C:\Users\Dell\.m2\repository"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\Dell\AppData\Local\Temp\"/>
-    <property name="idea.version" value="2018.3.3"/>
+    <property name="idea.version" value="2018.3.4"/>
     <property name="java.version" value="1.8.0_181"/>
     <property name="user.dir" value="E:\servlety\login-app"/>
     <property name="os.arch" value="amd64"/>
@@ -62,9 +62,9 @@
     <property name="java.class.version" value="52.0"/>
   </properties>
   <testcase name="shouldReturnFalseWhenPasswordIsLessThanSixCharacters" classname="pl.sda.LoginValidatorTest" time="0.006"/>
-  <testcase name="shouldReturnFalseWhenUserNameIsLessThanSixCharacters" classname="pl.sda.LoginValidatorTest" time="0.001"/>
+  <testcase name="shouldReturnFalseWhenUserNameIsLessThanSixCharacters" classname="pl.sda.LoginValidatorTest" time="0"/>
   <testcase name="shouldReturnFalseWhenUserNameIsEmpty" classname="pl.sda.LoginValidatorTest" time="0"/>
   <testcase name="shouldReturnFalseWhenPasswordIsEmpty" classname="pl.sda.LoginValidatorTest" time="0"/>
-  <testcase name="shouldReturnFalseForNonCaseSensitiveLoginOrPassword" classname="pl.sda.LoginValidatorTest" time="0.006"/>
-  <testcase name="shouldReturnFalseIfUserNameAndPasswordAreIncorrect" classname="pl.sda.LoginValidatorTest" time="0"/>
+  <testcase name="shouldReturnFalseForNonCaseSensitiveLoginOrPassword" classname="pl.sda.LoginValidatorTest" time="0.007"/>
+  <testcase name="shouldReturnFalseIfUserNameAndPasswordAreIncorrect" classname="pl.sda.LoginValidatorTest" time="0.001"/>
 </testsuite>
