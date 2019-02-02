@@ -1,4 +1,5 @@
-<%@ page import="java.time.LocalDateTime" %><%--
+<%@ page import="java.time.LocalDateTime" %>
+<%@ page import="pl.sda.Counter" %><%--
   Created by IntelliJ IDEA.
   User: Dell
   Date: 02.02.2019
@@ -12,5 +13,6 @@
 </head>
 <body>
     <p>Dzisiaj jest <%= LocalDateTime.now().toString()%></p>
+    <p><% out.print("Licznik odwiedzin: " + Counter.INSTANCE.getCount()); %></p>
 </body>
 </html>
