@@ -12,6 +12,7 @@
     <title>Hello World</title>
 </head>
 <body>
+    <p>Hello <%= request.getParameter("name")%></p>
     <p><% out.print("Licznik odwiedzin: " + Counter.INSTANCE.getCount()); %></p>
 </body>
 </html>

@@ -1,19 +1,20 @@
 package pl.sda;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-
-@Entity
-public class Address {
+public class AddressDTO {
     private Long id;
     private String city;
     private String street;
     private String houseNo;
 
-    @Id
-    @GeneratedValue
+    public AddressDTO() {
+    }
+
+    public AddressDTO(Address address) {
+        this.city = address.getCity();
+        this.street = address.getStreet();
+        this.houseNo = address.getHouseNo();
+    }
+
     public Long getId() {
         return id;
     }
@@ -22,7 +23,6 @@ public class Address {
         this.id = id;
     }
 
-    @Column
     public String getCity() {
         return city;
     }
@@ -31,7 +31,6 @@ public class Address {
         this.city = city;
     }
 
-    @Column
     public String getStreet() {
         return street;
     }
@@ -40,12 +39,16 @@ public class Address {
         this.street = street;
     }
 
-    @Column
     public String getHouseNo() {
         return houseNo;
     }
 
     public void setHouseNo(String houseNo) {
         this.houseNo = houseNo;
+    }
+
+    @Override
+    public String toString() {
+        return city + ", " + street + " " + houseNo;
     }
 }
