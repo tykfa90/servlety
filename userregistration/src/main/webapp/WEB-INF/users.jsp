@@ -31,11 +31,14 @@
     </style>
 </head>
 <body>
+<%@include file="header.html"%>
+
 <table>
     <tr>
         <td>First name</td>
         <td>Last name</td>
         <td>Address</td>
+        <td>Action</td>
     </tr>
     <% for (UserDTO userDTO : (Collection<UserDTO>) request.getAttribute("users")) { %>
     <tr>
@@ -44,6 +47,10 @@
         <td><%= userDTO.getLastName()%>
         </td>
         <td><%= userDTO.getAddressDTO()%>
+        </td>
+        <td>
+            <a href="userProfile?userId=<%=userDTO.getId()%>">Show user</a>
+            <a href="userProfileEdit?userId=<%=userDTO.getId()%>">Edit user</a>
         </td>
     </tr>
     <br>

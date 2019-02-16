@@ -1,7 +1,7 @@
 package pl.sda;
 
-import javax.inject.Singleton;
 import javax.inject.Inject;
+import javax.inject.Singleton;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
@@ -31,5 +31,13 @@ public class UserService {
         return userDao.getUsers().stream()
                 .map(UserDTO::new)
                 .collect(Collectors.toList());
+    }
+
+    UserDTO getUser(Long userId) {
+        User user = userDao.findById(userId);
+        if (user != null) {
+            return new UserDTO(user);
+        }
+        return null;
     }
 }

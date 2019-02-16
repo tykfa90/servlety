@@ -22,4 +22,8 @@ public class UserDao {
         Query query = entityManager.createQuery("select u from User u");
         return query.getResultList();
     }
+
+    User findById(Long userId) {
+        return entityManager.find(User.class, userId);
+    }
 }

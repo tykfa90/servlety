@@ -36,3 +36,6 @@ public class RegisterController extends HttpServlet {
         req.getRequestDispatcher("WEB-INF/userAdded.jsp").forward(req, resp);
     }
 }
+
+//TODO
+//zadanie domowe edycja użytkownika.

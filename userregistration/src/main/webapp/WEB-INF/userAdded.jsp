@@ -11,6 +11,7 @@
     <title>User Added</title>
 </head>
 <body>
+    <%@include file="header.html"%>
     <p><%= "Użytkownik " + request.getParameter("firstName") + " " + request.getParameter("lastName")%></p>
     <a href="users">Lista użytkowników.</a>
 </body>

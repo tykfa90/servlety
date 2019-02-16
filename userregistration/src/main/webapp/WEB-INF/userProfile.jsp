@@ -1,4 +1,5 @@
-<%--
+<%@ page import="pl.sda.UserDTO" %>
+<%@ page import="java.util.Collection" %><%--
   Created by IntelliJ IDEA.
   User: Dell
   Date: 03.02.2019
@@ -8,9 +9,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>$Title$</title>
+    <title>User Profile</title>
 </head>
 <body>
-$END$
+<%@include file="header.html"%>
+<jsp:useBean id="user" class="pl.sda.UserDTO" scope="request"/>
+
+<tr>
+    <td>Imię: <jsp:getProperty name="user" property="firstName"/></td>
+    <td>Nazwisko: <jsp:getProperty name="user" property="lastName"/></td>
+    <td>
+        Adres: <jsp:getProperty name="user" property="addressDTO" />
+    </td>
+</tr>
 </body>
 </html>

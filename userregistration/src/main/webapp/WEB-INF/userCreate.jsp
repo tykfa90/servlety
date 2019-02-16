@@ -11,6 +11,8 @@
     <title>New User Account</title>
 </head>
 <body>
+<%@include file="header.html"%>
+
     <form method="post">
         <label for="firstName">First Name: </label>
         <input type="text" id="firstName" name="firstName">
