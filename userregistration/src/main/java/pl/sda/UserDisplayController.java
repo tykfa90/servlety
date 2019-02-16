@@ -17,7 +17,7 @@ public class UserDisplayController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         UserDTO user = userService.getUser(Long.parseLong(req.getParameter("userId")));
-        req.setAttribute("user", user);
+        req.setAttribute("userDTO", user);
 
         req.getRequestDispatcher("WEB-INF/userProfile.jsp").forward(req, resp);
     }
