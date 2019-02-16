@@ -13,8 +13,6 @@
 </head>
 <body>
 <%@include file="header.html"%>
-<jsp:useBean id="user" class="pl.sda.UserDTO" scope="request"/>
-
 <tr>
     <td>Imię: <jsp:getProperty name="user" property="firstName"/></td>
     <td>Nazwisko: <jsp:getProperty name="user" property="lastName"/></td>
